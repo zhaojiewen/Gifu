@@ -10,6 +10,7 @@ public class GIFImageView: UIImageView, GIFAnimatable {
   /// Layer delegate method called periodically by the layer. **Should not** be called manually.
   ///
   /// - parameter layer: The delegated layer.
+  @available(iOS 10.0, *)
   override public func display(_ layer: CALayer) {
     if UIImageView.instancesRespond(to: #selector(display(_:))) {
       super.display(layer)
